@@ -54,6 +54,10 @@ Now that you have successfully run the app, let's modify it.
 2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
 
    For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+
+
+# Project Structure
+
 ```
 TodolistApp/
 │
@@ -115,6 +119,92 @@ TodolistApp/
 └── tsconfig.json
 ```
 
+# Environment
+```
+info Fetching system and libraries information...
+System:
+  OS: macOS 14.6.1
+  CPU: (8) arm64 Apple M1 Pro
+  Memory: 110.56 MB / 16.00 GB
+  Shell:
+    version: "5.9"
+    path: /bin/zsh
+Binaries:
+  Node:
+    version: 18.20.4
+    path: ~/.nvm/versions/node/v18.20.4/bin/node
+  Yarn:
+    version: 3.6.4
+    path: /usr/local/bin/yarn
+  npm:
+    version: 10.8.2
+    path: ~/.nvm/versions/node/v18.20.4/bin/npm
+  Watchman:
+    version: 2024.09.09.00
+    path: /usr/local/bin/watchman
+Managers:
+  CocoaPods:
+    version: 1.15.2
+    path: /usr/local/bin/pod
+SDKs:
+  iOS SDK:
+    Platforms:
+      - DriverKit 23.0
+      - iOS 17.0
+      - macOS 14.0
+      - tvOS 17.0
+      - watchOS 10.0
+  Android SDK:
+    API Levels:
+      - "21"
+      - "23"
+      - "28"
+      - "29"
+      - "30"
+      - "31"
+      - "32"
+      - "33"
+    Build Tools:
+      - 28.0.3
+      - 29.0.2
+      - 30.0.2
+      - 30.0.3
+      - 31.0.0
+      - 33.0.0
+    System Images:
+      - android-33 | Google Play ARM 64 v8a
+    Android NDK: Not Found
+IDEs:
+  Android Studio: 2022.2 AI-222.4459.24.2221.9971841
+  Xcode:
+    version: 15.0/15A240d
+    path: /usr/bin/xcodebuild
+Languages:
+  Java:
+    version: 19.0.1
+    path: /usr/bin/javac
+  Ruby:
+    version: 2.6.10
+    path: /usr/bin/ruby
+npmPackages:
+  "@react-native-community/cli": Not Found
+  react:
+    installed: 18.3.1
+    wanted: 18.3.1
+  react-native:
+    installed: 0.75.3
+    wanted: 0.75.3
+  react-native-macos: Not Found
+npmGlobalPackages:
+  "*react-native*": Not Found
+Android:
+  hermesEnabled: true
+  newArchEnabled: false
+iOS:
+  hermesEnabled: true
+  newArchEnabled: false
+```
+
 # Tech Stack
 ```
 @react-native-async-storage/async-storage    : Local Storage, Simple and lightweight storage
@@ -141,4 +231,4 @@ Ran all test suites.
 ```
 
 # Demo
-[Demo Video](./media/demo.mp4)
+[Demo Video](https://drive.google.com/file/d/1kWPQxtV7KbW5aj7Y6iK4kmyVA8Xfc8m-/view)
