@@ -54,26 +54,91 @@ Now that you have successfully run the app, let's modify it.
 2. For **Android**: Press the <kbd>R</kbd> key twice or select **"Reload"** from the **Developer Menu** (<kbd>Ctrl</kbd> + <kbd>M</kbd> (on Window and Linux) or <kbd>Cmd ⌘</kbd> + <kbd>M</kbd> (on macOS)) to see your changes!
 
    For **iOS**: Hit <kbd>Cmd ⌘</kbd> + <kbd>R</kbd> in your iOS Simulator to reload the app and see your changes!
+```
+TodolistApp/
+│
+├── test/
+│   ├── AddTodo.test.tsx
+│   ├── App.test.tsx
+│   ├── TodoItem.test.tsx
+│   ├── TodoList.test.tsx
+│   └── useTodoStore.test.ts
+│
+├── .bundle/
+├── node_modules/
+│
+├── android/
+|     |–– app/
+|     |     | src/
+|     |     |–– debug/
+|     |     |–– release/
+|     |     └–– build.gradle
+├─– ios/
+|     |–– TodoListApp/
+|     |–– Podfile
+|     |–– Podfile.lock
+├── props/
+│   ├── common.ts
+│   └── theme.ts
+│
+├── src/
+│   ├── components/
+│   │   ├── AddTodo.tsx
+│   │   ├── FilterTodos.tsx
+│   │   ├── TodoItem.tsx
+│   │   └── TodoList.tsx
+│   │
+│   ├── screens/
+│   │   └── HomeScreen.tsx
+│   │
+│   ├── store/
+│   │   └── useTodoStore.ts
+│   │
+│   └── utils/
+│
+├── .eslintrc.js
+├── .gitignore
+├── .prettierrc.js
+├── .watchmanconfig
+├── app.json
+├── App.tsx
+├── babel.config.js
+├── Gemfile
+├── index.js
+├── jest.config.js
+├── jest.setup.js
+├── metro.config.js
+├── package-lock.json
+├── package.json
+├── README.md
+├── setup.d.ts
+└── tsconfig.json
+```
 
-## Congratulations! :tada:
+# Tech Stack
+```
+@react-native-async-storage/async-storage    : Local Storage, Simple and lightweight storage
+react-native-gesture-handler                 : Library for handling gesture function on react native to reads correctly the gesture event
+react-native-reanimated                      : Animation Library used for animating component when action triggered
+react-native-vector-icons                    : Clean and details icons, easy to implement
+zustand                                      : State management library,easy to use and simple implementation
+```
 
-You've successfully run and modified your React Native App. :partying_face:
 
-### Now what?
+# Test Result
+```
+ PASS  __test__/AddTodo.test.tsx
+ PASS  __test__/useTodoStore.test.ts
+ PASS  __test__/TodoList.test.tsx
+ PASS  __test__/App.test.tsx
+ PASS  __test__/TodoItem.test.tsx
 
-- If you want to add this new React Native code to an existing application, check out the [Integration guide](https://reactnative.dev/docs/integration-with-existing-apps).
-- If you're curious to learn more about React Native, check out the [Introduction to React Native](https://reactnative.dev/docs/getting-started).
+Test Suites: 5 passed, 5 total
+Tests:       12 passed, 12 total
+Snapshots:   0 total
+Time:        1.521 s
+Ran all test suites.
+```
 
-# Troubleshooting
-
-If you can't get this to work, see the [Troubleshooting](https://reactnative.dev/docs/troubleshooting) page.
-
-# Learn More
-
-To learn more about React Native, take a look at the following resources:
-
-- [React Native Website](https://reactnative.dev) - learn more about React Native.
-- [Getting Started](https://reactnative.dev/docs/environment-setup) - an **overview** of React Native and how setup your environment.
-- [Learn the Basics](https://reactnative.dev/docs/getting-started) - a **guided tour** of the React Native **basics**.
-- [Blog](https://reactnative.dev/blog) - read the latest official React Native **Blog** posts.
-- [`@facebook/react-native`](https://github.com/facebook/react-native) - the Open Source; GitHub **repository** for React Native.
+# Demo
+![Demo Video](demo.mp4)
