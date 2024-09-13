@@ -141,4 +141,4 @@ Ran all test suites.
 ```
 
 # Demo
-![Demo Video](demo.mp4)
+[Demo Video](./media/demo.mp4)
